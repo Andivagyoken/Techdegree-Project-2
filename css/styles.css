@@ -1,0 +1,300 @@
+/* ===============
+   Base element styles
+================== */
+
+/* Web fonts */
+@font-face {
+  font-family: "Pacifico", cursive;
+  font-family: "Source Sans Pro", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro");
+}
+
+/* Base element styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  font-weight: lighter;
+  color: #4A4A4A;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  color: #3C3C3B;
+}
+
+h2,
+h3,
+a {
+  color: #3C3C3B;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3em 0;
+  font-size: 1.2em;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: normal;
+  padding: 1.2em 0 0.5em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+a:hover {
+  color: #979797;
+}
+
+/* ===============
+   Base layout styles
+================== */
+
+/* Navigation */
+
+.title {
+  font-size: 2.2em;
+}
+
+  .title a,
+  .main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .main-nav li {
+    background: #FFFFFF;
+    margin-bottom: 10px;
+  }
+
+  .main-nav a:hover {
+    background: #E0E0E0;
+  }
+
+  .main-nav a:active {
+    background: #C7C7C7;
+  }
+
+.banner p {
+  font-size: 1.1em;
+  color: #8F8A83;
+  font-weight: normal;
+}
+
+/* Layout containers */
+
+.main-header {
+  background: #F2FFF7;
+  padding: 0.5em 2em;
+  overflow: hidden;
+}
+
+.main-footer {
+  background: #F2FFF7;
+  overflow: hidden;
+}
+
+#contact {
+  padding: 0.5em 2em;
+  text-align: center;
+}
+
+.banner {
+  padding: 1em 0em;
+  text-align: center;
+}
+
+.item {
+  padding-right: 1.2em;
+  padding-left: 1.2em;
+  text-align: center;
+}
+
+.item p {
+  padding: 0 1em;
+}
+
+/* Page elements */
+
+.profile-pic {
+  width: 150px;
+  padding-bottom: 1em;
+}
+
+.highlight {
+  font-weight: bolder;
+}
+
+#contact-text {
+  margin-bottom: 1.5em;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  max-width: 100%;
+  margin: 1em auto;
+}
+
+#name {
+  display: inline;
+  float: left;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-left: 2em;
+}
+
+.footer-nav {
+  float: right;
+}
+
+.footer-nav li {
+  float: left;
+  padding-right: 2em;
+}
+
+#footer-home,
+#footer-portfolio,
+#footer-contact {
+  display: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ===============
+   Media Queries
+================== */
+
+/* Tablet design */
+
+@media (min-width: 768px) {
+  .main-header {
+    padding: 0.5em 3em
+  }
+  .main-nav,
+  .main-nav li {
+    display: inline-block;
+    background: #F2FFF7;
+    padding: 0px 20px;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  #home {
+    text-align: center;
+  }
+
+  .banner {
+    position: relative;
+  }
+
+  .profile-pic {
+    width: 170px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 50px;
+    top: -10px;
+  }
+
+  .headline {
+    width: 60%;
+    text-align: left;
+  }
+
+  .item {
+    display: inline-block;
+    width: 50%;
+    margin-right: -2px;
+    vertical-align: top;
+  }
+
+  .main-footer {
+    padding: 0em 7em;
+  }
+
+  .footer-nav li {
+    float: left;
+    margin-left: 1.4em;
+  }
+
+  #footer-home,
+  #footer-portfolio,
+  #footer-contact {
+    display: inline-block;
+  }
+
+  #footer-top {
+    display: none;
+  }
+}
+
+/* Desktop design  */
+
+@media (min-width: 1024px) {
+  .main-header {
+    position: relative;
+  }
+
+  .title {
+    float: left;
+    font-size: 1.5em;
+  }
+
+  .main-nav {
+    display: inline-block;
+    float: right;
+    padding-top: 15px;
+  }
+  .main-nav li {
+    float: left;
+  }
+
+  .item {
+    width: 33%;
+  }
+
+}
